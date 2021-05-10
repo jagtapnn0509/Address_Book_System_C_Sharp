@@ -22,8 +22,16 @@ namespace Address_Book_System
 
             foreach (var i in this.list)
             {
-                Console.WriteLine($"{i.First_Name} : {i.Last_Name} : {i.Address} : {i.City} : {i.State} : {i.Zip} : {i.Phone_No} : {i.Email}");
+                Console.WriteLine($"First Name :{i.First_Name} \nLast Name : {i.Last_Name} \nAddress : {i.Address} \nCity : {i.City} \nState : {i.State} \nZip : {i.Zip} \nPhone No : {i.Phone_No} \nEmail : {i.Email}");
+                Console.WriteLine("---------------------------------------------------------------------------------------------------");
             }
+        }
+
+        public int Update_Contact(string FirstName)
+        {
+            int index = list.FindIndex(data => data.First_Name.Equals(FirstName));
+            return index;
+            
         }
     }
 }
