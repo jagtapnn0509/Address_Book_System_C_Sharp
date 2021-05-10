@@ -17,7 +17,6 @@ namespace Address_Book_System
         }
         public void Display_Contacts()
         {
-            Console.WriteLine("---------------------------------------------------------------------------------------------------");
             Console.WriteLine("--------------Contacts in Address Books System--------------");
 
             foreach (var i in this.list)
